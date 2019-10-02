@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Plug In CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/tiltedpage-scroll.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>JQuery plug in</title>
+  </head>
+  <body>
+    <section class="bg-success menu-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="animsition.html">Animsition</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="parallax.html">parallax</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="slider.html">slider</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="counter-p">
+      <div class="container counter-p">
+        <div class="row">
+          <div class="col-md-12 text-center h1">
+             <h1>COUNTERUP</h1>
+          </div>
+          <div class="col-md-4 text-center">
+             <h2 class="counter">1,234,567</h2>
+          </div>
+          <div class="col-md-4 text-center">
+            <h2 class="counter">234,567</h2>
+          </div>
+           <div class="col-md-4 text-center">
+             <h2 class="counter">34,567</h2>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section class="curve">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Curved Text</h1>
+            <div id="text1"> Hm, looks like the wonderful arctext plugin. </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    <section class="anima-tion">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+             <h1>WOW</h1>
+            <div class="wow bounceInUp">
+              <h1>this text will bounce in up</h1>
+            </div>            
+            <div class="wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms">
+              <h1>Pulse</h1>
+            </div>
+            <div class="wow shake" data-wow-iteration="infinite" data-wow-duration="1500ms">
+              <h1>Shake</h1>
+            </div>
+             <div class="wow tada" data-wow-iteration="infinite" data-wow-duration="1500ms">
+              <h1>Tada</h1>
+            </div>
+              <div class="wow flash" data-wow-iteration="infinite" data-wow-duration="1500ms">
+              <h1>Flash</h1>
+            </div>
+
+          </div> 
+        </div>
+      </div>     
+    </section>
+
+    <section class="tiltedpage">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+             <h1 class="text-center">Tilted Page Scroll</h1>
+
+            <div class="main">
+              <section class="page1">
+                <img src="images/demo1.jpg">
+              </section>
+              <section class="page2">
+               <img src="images/demo2.jpg">
+              </section>
+              
+              <section class="last-page">
+                <img src="images/demo3.jpg">
+              </section>
+               <section class="last-page">
+                <img src="images/demo4.jpg">
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section class="para">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="parallax-window" data-parallax="scroll" data-image-src=""></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+   <script src="js/jquery.min.js"></script>
+   <!-- plugin js -->
+   <!-- counterUp start-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <!-- counter up end -->
+   <!-- curved text start -->
+   <script src="js/jquery.typorize.js"></script>
+   <script src="js/jquery.curvedtext.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/jquery.tiltedpage-scroll.js"></script>
+   <script src="js/animsition.min.js"></script>
+
+
+
+   <!-- curved text end -->
+
+   <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+       $(document).ready(function() {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+            var arc = function (t)
+            {
+                return {
+                    x: 500.0 + 300.0 * Math.cos(2.0 * Math.PI * t - 0.5 * Math.PI),
+                    y: 400.0 + 300.0 * Math.sin(2.0 * Math.PI * t - 0.5 * Math.PI)
+                };
+            };
+
+            $('#text1').curvedText({
+                curve:    arc,
+                domain:   [-0.2, 0.2],
+                viewport: { x: 0.0, y: 0.0, width: 1000.0, height: 400.0 }
+            });
+            new WOW().init();
+    
+            $(".main").tiltedpage_scroll({
+               sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+               angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+               opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+               scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+               outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+             });
+            $("form").validate();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Plug In CSS -->
+  
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>JQuery plug in</title>
+  </head>
+  <body>
+    <section class="bg-success menu-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="animsition.html">Animsition</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="parallax.html">Parallax</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="slider.html">slider</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+             <h1>owl carousel</h1>
+            <div class="owl-carousel owl-theme">
+              <div> <img src="images/backlit-beach-color-258109.jpg"></div>
+              <div> <img src="images/bali-beautiful-beauty-433539.jpg"></div>
+              <div> <img src="images/beauty-bloom-concept-74512.jpg"> </div>
+              <div> <img src="images/daylight-forest-hd-wallpaper-443446.jpg"> </div>
+              <div> <img src="images/beauty-bloom-blue-67636.jpg"> </div>
+              <div> <img src="images/demo1.jpg"></div>
+              <div> <img src="images/demo2.jpg"></div>
+              <div> <img src="images/beauty-bloom-concept-74512.jpg"> </div>
+              <div> <img src="images/daylight-forest-hd-wallpaper-443446.jpg"> </div>
+              <div> <img src="images/beauty-bloom-blue-67636.jpg"> </div>
+              <div> <img src="images/demo1.jpg"></div>
+              <div> <img src="images/demo2.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+
+    
+   
+
+    <!-- jQuery -->
+   <script src="js/jquery.min.js"></script>
+   <!-- plugin js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+
+
+
+   <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              600:{
+                  items:3,
+                  nav:false
+              },
+              1000:{
+                  items:5,
+                  nav:true,
+                  loop:true
+              }
+          }
+      });
+     
+    </script>
+  </body>
+</html>

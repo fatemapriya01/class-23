@@ -1,0 +1,50 @@
+.menu-bar{
+	padding: 30px 0;
+}
+.menu ul li a{
+	color: #fff !important;
+	padding: 10px 30px !important;
+	font-size: 30px;
+	margin: 0 10px ;
+	border: 5px solid white;
+	border-radius: 30px;
+
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.counter-p{
+	background-color: #AAAEB4;
+	padding: 30px 0;
+}
+.h1{
+	margin-bottom: 30px;
+}
+
+.curve{
+   background-color: #3fafee;
+}
+#text1
+{
+    margin:           30px 30px;
+    overflow:         hidden;
+    font:             normal normal normal 2.0em/1.5 'Open Sans Light', sans-serif;
+    color:            #ffffff;
+    /*background-color: #3fafee;*/
+}
+.anima-tion{
+	background-color: pink;
+	padding: 40px 0;
+}
+.h-b{
+	height: 30px;
+	width: 60px;
+	border: 1px solid white;
+}
+.tiltedpage{
+	margin: 30px 0;
+}
+.tiltedpage img{
+	margin-bottom: 60px;
+} 
